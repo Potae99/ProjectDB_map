@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './page/Login';
 import Register from './page/Register';
+import Travel_upload from './page/Travel_upload';
 
 const routes = [
   {
@@ -11,6 +12,10 @@ const routes = [
   {
     path: 'register',
     element:<Register />
+  },
+  {
+    path: 'travel_up',
+    element:<Travel_upload />
   }
 ];
 
