@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './page/Login';
 import Register from './page/Register';
 import Travel_upload from './page/Travel_upload';
+import Travel_history from './page/Travel_history';
 
 const routes = [
   {
@@ -14,8 +15,12 @@ const routes = [
     element:<Register />
   },
   {
-    path: 'travel_up',
+    path: 'travel_upload',
     element:<Travel_upload />
+  },
+  {
+    path: 'travel_history',
+    element:<Travel_history />
   }
 ];
 

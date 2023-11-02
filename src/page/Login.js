@@ -1,12 +1,19 @@
 import React from 'react'
 
 function login() {
+  const backgroundImage = {
+    backgroundImage: `url(/forest1.jpg)`, // แทนตำแหน่งของรูปภาพที่ต้องการใช้
+    backgroundSize: 'cover',
+     // ขนาดของภาพ
+    // คุณสามารถเพิ่ม style อื่น ๆ ที่ต้องการเพิ่มในภาพพื้นหลังได้ตามต้องการ
+  };
+
+
   return (
-    <div>
-      <div className='bg-gray-50  dark:bg-gray-900'>
+    <div >
+      <div style={backgroundImage} className='bg-gray-50 min-h-screen min-w-full  dark:bg-gray-900'>
         <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-          <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
-            {/* <img class="w-8 h-8 mr-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg" alt="logo"/> */}
+          <a class="flex  items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
               My travel journal
           </a>
           <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
@@ -14,6 +21,7 @@ function login() {
               <h1 class="text-xl text-center font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                 Sign in to your account
               </h1>
+              <p></p>
               <form class="space-y-4 md:space-y-6" action="#">
                 <div>
                   <label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your username</label>
