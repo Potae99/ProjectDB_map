@@ -42,15 +42,14 @@ function TravelHistory() {
 
     return (
         <div>
-            <div className='border min-h-screen w-auto' style={backgroundImage}>
+            <div className=' min-h-screen w-auto' style={backgroundImage}>
                 <div className='min-h-screen p-4'>
                     <h1 className='text-4xl font-bold mb-8'>Travel History</h1>
                     <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4'>
                         {data.map((item, index) => (
-
                             <Card key={index} className="w-full  sm:w-80 md:w-96">
                                 <CardHeader floated={false} color="blue-gray" className="relative h-56">
-                                    <img
+                                    <image
                                         src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
                                         alt="card-image"
                                         className="w-full h-full object-cover"

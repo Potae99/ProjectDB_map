@@ -5,6 +5,8 @@ import Register from './page/Register';
 import Travel_upload from './page/Travel_upload';
 import Travel_history from './page/Travel_history';
 import Travel_detail from './page/Travel_detail';
+import Travel_server from './page/Travel_server';
+import { NavbarDefault } from './component/NavbarDefault';
 
 const routes = [
   {
@@ -26,6 +28,14 @@ const routes = [
   {
     path: 'travel_detail',
     element:<Travel_detail />
+  },
+  {
+    path: 'travel_server',
+    element:<Travel_server />
+  },
+  {
+    path: 'nav',
+    element:<NavbarDefault />
   }
 ];
 
